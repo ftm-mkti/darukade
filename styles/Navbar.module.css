@@ -1,6 +1,7 @@
 .header {
     border-bottom: 1px solid #D4D4D4;
 }
+
 .navbar {
     margin: 0 16px;
 }
@@ -54,27 +55,44 @@
 }
 
 .login__icon {
-    width: 1.6rem;
-    color: #2b2b2b;
+    width: 2rem;
+    color: rgb(63, 63, 63);
+    padding-left: 0.7rem
 }
 
 .login {
-    width: 10rem;
+    min-width: 64px;
     border: 1px solid #b1b6b8;
-    padding: 0.6rem 1.2rem;
+    padding: 6px 12px;
 }
 
 .login__text {
-    color: #2b2b2b;
+    background-color: rgb(245, 245, 245);
+    color: rgb(63, 63, 63);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19px;
 }
 
 .menu__item {
-    padding: 8px 12px;
+    padding: 1.6rem 0 1.6rem 1.2rem;
 }
 
 .menu__link {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #2b2b2b;
     font-weight: bold;
-
 }
+
+.menu__link:hover {
+    color: rgb(102, 200, 52);
+    transition: color 0.2s ease-in
+;
+}
+
+.svgMenu {
+    fill: #b1b6b8;
+    width: 1rem;
+    margin-left: 1rem;
+}
+
