@@ -21,17 +21,21 @@ time, mark, audio, video {
     border: 0;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
@@ -62,4 +66,24 @@ body {
 
 a {
     text-decoration: none;
+}
+
+/*=====================| swiper*/
+.swiper-pagination-bullet {
+    background-color: transparent !important;
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+    border: 1.5px solid #000 !important;
+    opacity: .8;
+    border-radius: 50% !important;
+    transition: all .25s !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 28px !important;
+    height: 12px !important;
+    border: 1.5px solid #000 !important;
+    border-radius: 20px !important;
+    background: white !important;
+    opacity: 1;
 }
