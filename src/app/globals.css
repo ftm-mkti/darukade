@@ -1,3 +1,18 @@
+:root {
+    --primary-font: "iran-sans", sans-serif;
+    --primary-color: rgb(97, 181, 55);
+    --color-bg: #FFFFFF;
+    --filter-color: brightness(0) saturate(100%) invert(21%) sepia(0) saturate(165%) hue-rotate(172deg) brightness(97%) contrast(86%);
+    --gray-light: rgb(212, 212, 212);
+}
+
+@font-face {
+    font-family: "iran-sans";
+    src: url('/fonts/Iranian Sans.ttf')
+    format('truetype');
+}
+/*=========================================*/
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -19,6 +34,8 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
+    /*font-size: 100%;*/
+    font: inherit;
     vertical-align: baseline;
 }
 
@@ -40,6 +57,12 @@ blockquote, q {
     quotes: none;
 }
 
+blockquote:before, blockquote:after,
+q:before, q:after {
+    /*content: '';*/
+    content: none;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -47,21 +70,22 @@ table {
 
 /*==========================|css reset*/
 
-
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    scroll-behavior: smooth;
 }
 
-*, *::after, *::before {
+*, *::before , *::after {
     box-sizing: inherit;
 }
 
+
 body {
-    font-size: 1.6rem;
+    font-family: var(--primary-font), sans-serif;
+    background-color: var(--color-bg);
     line-height: 1.6;
-    overflow: hidden;
+    font-size: 1.6rem;
+    overflow-x: hidden;
 }
 
 a {
@@ -69,6 +93,12 @@ a {
 }
 
 /*=====================| swiper*/
+
+.mySwiper {
+    margin: 2rem 0;
+    border-radius: 1.5rem;
+}
+
 .swiper-pagination-bullet {
     background-color: transparent !important;
     width: 1.2rem !important;
@@ -82,7 +112,7 @@ a {
 .swiper-pagination-bullet-active {
     width: 28px !important;
     height: 12px !important;
-    border: 1.5px solid #000 !important;
+    border: 1.2px solid #000 !important;
     border-radius: 20px !important;
     background: white !important;
     opacity: 1;

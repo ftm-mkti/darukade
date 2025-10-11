@@ -1,14 +1,11 @@
-import Navbar from "@/modules/Navbar";
-import Slider from "@/template/Slider";
-
+import Topbar from "@/components/module/Topbar/Topbar";
 
 
 export default function Home() {
   return (
 
       <>
-          <Navbar />
-          <Slider/>
+          <Topbar />
       </>
   );
 }
